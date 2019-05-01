@@ -1,0 +1,21 @@
+﻿v0.4
+Rewrite of datetime decoding. Code is less brittle with better error handling.
+Fixed some datetime decoding logic. Dates that were showing 2011 now decode properly. (value - 11644473600000000) / increment.
+Added some additional date indicators for decoding.
+GUI: Columns can now be reordered by the user.
+GUI: box to show log for warm and fuzzies.
+GUI: titlebar set to open file name.
+
+v0.3
+Fixed relative path issue for dateindicators.txt when app added to environment path.
+Fixed mac/ios dates using proper mac epoch (2001 vs 1970) so they don't show 1982 anymore and give proper timestamp.
+Added drag and drop support for opening databases. Just drag file into the form.
+Added database file mac times and attributes to form.
+Minor cosmetic changes to the gui.
+
+v0.2
+added decoding for dates in double from obscure ios sqlitedb's.
+GUI only: fixed issue where error popup persists until app restarted.
+
+v.0.1
+initial release.
